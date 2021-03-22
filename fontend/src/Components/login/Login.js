@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
         '& > *': {
             margin: theme.spacing(1),
             width: '40ch',
-            color:'pink',
+            color:'pink !importan',
         },
     },
     paper: {
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        color:'pink',
+        color:'pink !importan',
     },
     avatar: {
         margin: theme.spacing(1),
@@ -36,11 +36,11 @@ const useStyles = makeStyles((theme) => ({
     form: {
         width: '100%', // Fix IE 11 issue.
         marginTop: theme.spacing(1),
-        color:'pink',
+        color:'pink !importan',
     },
     submit: {
         margin: theme.spacing(3, 0, 2),
-        backgroundColor:'pink',
+        backgroundColor:'pink !importan',
     },
 }));
 

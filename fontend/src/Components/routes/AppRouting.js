@@ -51,7 +51,7 @@ function AppRoute() {
   return (
     <>
       <form>
-        <AppBar position="static" style={{backgroundColor:'pink'}} >
+        <AppBar position="static" style={{backgroundColor:'pink !importan'}} >
           <Toolbar>
             {(globalState.role === null) ?
               <>
