@@ -3,7 +3,7 @@
 
 var  BaseURL = window.location.href.split(":");
 if (BaseURL[0] === "https") {
-    BaseURL = 'https://m-sweet-app.herokuapp.com/'
+    BaseURL = 'https://sweet-app1.herokuapp.com'
 }
 else {
     BaseURL = "http://localhost:5000"
