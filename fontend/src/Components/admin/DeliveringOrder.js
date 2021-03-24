@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         backgroundColor: theme.palette.background.paper,
-        border: '2px solid #000',
+        border: '2px solid black',
         boxShadow: theme.shadows[5],
         padding: theme.spacing(2, 4, 3),
     },
@@ -89,11 +89,11 @@ export default function DeliveringOrder() {
     return (
         <div style={{ margin: 20 }}>
 
-            <h1>All Order With delever detail</h1>
+            <h1>Delivery detail</h1>
             <div maxWidth="xl">
-                <div style={{ border: '2px solid #3f51b5', borderRadius: '10px' }}>
+                <div style={{ border: '2px solid black', borderRadius: '10px' }}>
                     {order.map((product, idx) => {
-                        return <div style={{ border: '2px solid #3f51b5', backgroundColor: '#bacaff', margin: 20, padding: 20, borderRadius: 10 }} key={idx} value={product.id}>
+                        return <div style={{ border: '2px solid black', backgroundColor: 'pink', margin: 20, padding: 20, borderRadius: 10 }} key={idx} value={product.id}>
 
 
                             <h1>Order Detail</h1>
@@ -103,7 +103,7 @@ export default function DeliveringOrder() {
                                 <div className={classes.header}><h2>sweet description</h2></div>
                                 <div className={classes.header}><h2>Sweet Price</h2></div>
                                 <div className={classes.header}><h2>Sweet Quantity in kg</h2></div>
-                                <div className={classes.header}><h2>total</h2></div>
+                                <div className={classes.header}><h2>Total</h2></div>
                             </div>
 
                             {
@@ -177,7 +177,7 @@ export default function DeliveringOrder() {
                                     {product.total}
                                 </div> <br />
                                 <div>
-                                    <h1 style={{color: "#3f51b5"}}>Delivered</h1>
+                                    <h1 style={{color: "red"}}>Delivered Successfully</h1>
                                     {/* <button
                                         style={{ margin: '20px', backgroundColor: '#3f51b5', border: 'none', padding: '10px', borderRadius: '4px', color: '#ffff' }}
                                         size="small" onClick={() => removeFromCart(product)} color="primary">

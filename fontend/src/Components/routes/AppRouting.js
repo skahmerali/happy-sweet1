@@ -51,7 +51,7 @@ function AppRoute() {
   return (
     <>
       <form>
-        <AppBar position="static" style={{backgroundColor:'pink !importan'}} >
+        <AppBar position="static" style={{backgroundColor:'black'}} >
           <Toolbar>
             {(globalState.role === null) ?
               <>
@@ -65,10 +65,10 @@ function AppRoute() {
               : null}
             {(globalState.role === "user") ?
               <>
-                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu"> <MenuIcon /> </IconButton>
-                <Typography variant="h6" className={classes.title}> Sweet Place </Typography>
-                <Link style={{ textDecoration: 'none' }} to="/" ><Button style={{ color: 'white', textDecoration: 'none', textTransform: 'capitalize' }}>Dashboard</Button></Link>
-                <Link style={{ textDecoration: "none" }} to="/my-all-orders" ><Button style={{ color: 'white', textDecoration: 'none', textTransform: 'capitalize' }}>my orders</Button></Link>
+                {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu"> <MenuIcon /> </IconButton> */}
+                <Typography variant="h6" className={classes.title}>  Happy-Sweet (Order Place) </Typography>
+                <Link style={{ textDecoration: 'none' }} to="/" ><Button style={{ color: 'white',fontSize:'30px', textDecoration: 'none', textTransform: 'capitalize' }}>Dashboard</Button></Link>
+                <Link style={{ textDecoration: "none" }} to="/my-all-orders" ><Button style={{ backgroundColor: 'pink',color: 'white',fontSize:'30px', textDecoration: 'none', textTransform: 'capitalize' }}>my orders</Button></Link>
                 <LogoutRequest />
 
               </> : null}
@@ -76,8 +76,8 @@ function AppRoute() {
 
             {(globalState.role === "admin") ?
               <>
-                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu"> <MenuIcon /> </IconButton>
-                <Typography variant="h6" className={classes.title}> Sweet Place </Typography>
+                {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu"> <MenuIcon /> </IconButton> */}
+                <Typography variant="h6" className={classes.title}>  Happy-Sweet (Admin pannel)  </Typography>
                 <Link style={{ textDecoration: 'none' }} to="/">  <Button style={{ color: 'white', textDecoration: 'none', textTransform: 'capitalize' }}>Allorders</Button></Link>
                 <Link style={{ textDecoration: 'none' }} to="/AddShopCard">  <Button style={{ color: 'white', textDecoration: 'none', textTransform: 'capitalize' }}>AddShop Card</Button></Link>
                 <Link style={{ textDecoration: 'none' }} to="/Accepted-order">  <Button style={{ color: 'white', textDecoration: 'none', textTransform: 'capitalize' }}>Accepted Order</Button></Link>

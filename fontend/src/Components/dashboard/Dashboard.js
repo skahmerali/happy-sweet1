@@ -26,7 +26,7 @@ function Dashboard() {
     <div className="app">
       <header>
         <button
-          style={{ margin: '20px', backgroundColor: 'pink', border: 'none', padding: '10px', borderRadius: '4px', color: '#ffff' }}
+          style={{ margin: '20px', backgroundColor: 'pink',fontSize:'40px', border: 'none', padding: '10px', borderRadius: '4px', color: 'black' }}
           onClick={() => navigateTo(PAGE_CART)}>
           Go to Cart ({getCartTotal()})
         </button>
@@ -34,7 +34,8 @@ function Dashboard() {
         <button
           style={{
             margin: '20px',backgroundColor:'pink', border: 'none',
-            padding: '10px', borderRadius: '4px', color: '#ffff'
+            padding: '10px', borderRadius: '4px', color: 'black',
+            fontSize:'40px',
           }}
           onClick={() => navigateTo(PAGE_PRODUCTS)}>
           View Products

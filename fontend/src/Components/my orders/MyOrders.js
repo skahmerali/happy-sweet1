@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
-    background:'pink'
+    background:'black'
   },
   header: {
     width: "15%",
@@ -75,10 +75,10 @@ export default function MyOrders() {
   return (
     <div style={{ margin: 20 }}>
 
-      <h1 style={{ color: 'pink' }}>This is my all order</h1>
+      <h1 style={{ color: 'black' }}> Orders Detail</h1>
       <div maxWidth="xl">
       
-        <div style={{ border: '2px solid pink', borderRadius: '10px' }}>
+        <div style={{  borderRadius: '10px' }}>
           {order.map((product, idx) => {
             return <div key={idx} style={{ border: '2px solid black', backgroundColor: 'pink', margin: 20, padding: 20, borderRadius: 10 }} >
               <div style={{ margin: "15px", display: 'flex', justifyContent: 'space-between', height: 70 }}>

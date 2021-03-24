@@ -36,14 +36,14 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         backgroundColor: theme.palette.background.paper,
-        border: '2px solid #3f51b5',
+        border: '2px solid black',
         boxShadow: theme.shadows[5],
         padding: theme.spacing(2, 4, 3),
 
     },
     form: {
         backgroundColor: theme.palette.background.paper,
-        border: '2px solid #3f51b5',
+        border: '2px solid black',
         boxShadow: theme.shadows[5],
         padding: theme.spacing(2, 4, 3),
 
@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
         border: "none",
         backgroundColor: "pink",
         opacity: 0.9,
-        color: "#ffffff",
+        color: "black",
         paddingLeft: "15px",
         marginBottom: "10px"
     },
@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
         border: "none",
         backgroundColor: "#3f51b5",
         opacity: 0.9,
-        color: "#ffffff",
+        color: "black",
         paddingLeft: "15px",
         marginBottom: "10px",
         overflow: "hidden",
@@ -81,11 +81,11 @@ const useStyles = makeStyles((theme) => ({
         height: '60px',
     },
     color: {
-        color: "#3f51b5",
+        color: "black",
     },
     radio: {
         '&$checked': {
-            color: '#3f51b5'
+            color: 'black'
         }
     },
     root: {
@@ -176,7 +176,7 @@ export default function AddShopCard() {
 
     return (
         <>
-            <Button className={classes.marginnn} style={{ color: '#3f51b5' }}><AddShoppingCartIcon className={classes.sizeeee} onClick={handleOpen} /></Button>
+            <Button className={classes.marginnn} style={{ color: 'pink' }}><AddShoppingCartIcon className={classes.sizeeee} onClick={handleOpen} /></Button>
 
             <Modal
                 aria-labelledby="transition-modal-title"

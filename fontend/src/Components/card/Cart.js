@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
     },
     paper: {
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: 'pink',
         border: '2px solid #000',
         boxShadow: theme.shadows[5],
         padding: theme.spacing(2, 4, 3),
@@ -48,14 +48,14 @@ const useStyles = makeStyles((theme) => ({
         height: "35px",
         border: "none",
         borderRadius: '5px',
-        backgroundColor: "#3f51b5",
+        backgroundColor: "black",
         opacity: 0.9,
-        color: "#ffffff",
+        color: "white",
         paddingLeft: "5px",
         marginBottom: "10px"
     },
     button: {
-        color: "#3f51b5",
+        color: "black",
         border: 'none',
         backgroundColor: 'none',
     },

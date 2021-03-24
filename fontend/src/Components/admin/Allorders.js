@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import  BaseURL  from '../Url/BaseURL'
+import BaseURL from '../Url/BaseURL'
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
@@ -78,7 +78,7 @@ export default function Allorders() {
 
 
     const AcceptOrder = (product) => {
-        
+
 
         axios({
             method: "post",
@@ -120,9 +120,9 @@ export default function Allorders() {
 
             <h1>All Order With delever detail</h1>
             <div maxWidth="xl">
-                <div style={{ border: '2px solid #3f51b5', borderRadius: '10px' }}>
+                <div style={{ border: '2px solid black', borderRadius: '10px' }}>
                     {order.map((product, idx) => {
-                        return <div style={{ border: '2px solid #3f51b5', backgroundColor: '#bacaff', margin: 20, padding: 20, borderRadius: 10 }} key={idx} value={product.id}>
+                        return <div style={{ border: '2px solid black', backgroundColor: 'pink', margin: 20, padding: 20, borderRadius: 10 }} key={idx} value={product.id}>
 
 
                             <h1>Order Detail</h1>
@@ -132,7 +132,7 @@ export default function Allorders() {
                                 <div className={classes.header}><h2>sweet description</h2></div>
                                 <div className={classes.header}><h2>Sweet Price</h2></div>
                                 <div className={classes.header}><h2>Sweet Quantity in kg</h2></div>
-                                <div className={classes.header}><h2>total</h2></div>
+                                <div className={classes.header}><h2>Total</h2></div>
                             </div>
 
                             {
@@ -158,7 +158,7 @@ export default function Allorders() {
                                                         </span>
                                                     </div>
                                                     <div className={classes.header}>
-                                                        <span style={{ lineHeight: "100px", padding: "10px" }}  variant="h5" id="title" component="h2">
+                                                        <span style={{ lineHeight: "100px", padding: "10px" }} variant="h5" id="title" component="h2">
                                                             {order.description}
                                                         </span>
                                                     </div>
@@ -207,12 +207,12 @@ export default function Allorders() {
                                 </div> <br />
                                 <div>
                                     <button
-                                        style={{ margin: '20px', backgroundColor: '#3f51b5', border: 'none', padding: '10px', borderRadius: '4px', color: '#ffff' }}
+                                        style={{ margin: '20px', backgroundColor: 'black', border: 'none', padding: '10px', borderRadius: '4px', color: '#ffff' }}
                                         size="small" onClick={() => AcceptOrder(product)} color="primary">
                                         Accept Order
                                     </button>
                                     <button
-                                        style={{ margin: '20px', backgroundColor: '#3f51b5', border: 'none', padding: '10px', borderRadius: '4px', color: '#ffff' }}
+                                        style={{ margin: '20px', backgroundColor: 'black', border: 'none', padding: '10px', borderRadius: '4px', color: '#ffff' }}
                                         size="small" onClick={() => removeFromCart(product)} color="primary">
                                         Remove Order
                                     </button>

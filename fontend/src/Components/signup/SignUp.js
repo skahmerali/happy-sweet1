@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
         '& > *': {
             margin: theme.spacing(1),
             width: '40ch',
-            color:'pink',
+            color:'black',
         },
     },
     paper: {
@@ -30,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        color:'pink',
+        color:'black',
+        font:'2px',
     },
     avatar: {
         margin: theme.spacing(1),
@@ -43,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     },
     submit: {
         margin: theme.spacing(3, 0, 2),
-        backgroundColor:'pink',
+        backgroundColor:'black',
     },
 }));
 
